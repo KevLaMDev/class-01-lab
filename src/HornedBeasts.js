@@ -6,7 +6,8 @@ class HornedBeasts extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      votes: 0
+      votes: 0,
+      instructions: ''
     }
   }
 
@@ -15,6 +16,12 @@ class HornedBeasts extends React.Component {
       votes: this.state.votes + 1
     })
   }
+
+  clickOnDesc = () => {
+    this.setState({
+      instructions: 'psssst click on the picture'
+    })
+  };
 
   render() {
     return (
@@ -27,13 +34,11 @@ class HornedBeasts extends React.Component {
               alt={this.props.description}
               onClick={this.handleClick}
             />
-            <Card.Body>
-              <Card.Title>{this.props.title}</Card.Title>
+            <Card.Body onClick={this.clickOnDesc}>
+              <Card.Title>{this.props.title}  💖: {this.state.votes}</Card.Title>
               <Card.Text>
-                {this.props.description}
-                💖: {this.state.votes}
+                {this.props.description} <br></br> {this.state.instructions}
               </Card.Text>
-              {/* <Button variant="primary">Go somewhere</Button> */}
             </Card.Body>
           </Card>
         </article>
