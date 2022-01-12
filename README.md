@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+## class 01 1/10/22
+- added basic components: Main, Footer, Header, and HornedBeasts Component(this renders the individual pictures with their descriptions)
+- HornedBeasts component is built out with an img tag with src, alt, and title attributes and a p tag
+  - the component takes in data for the tags and attributes via props passed from the main component
+- Main then invokes the Horned Beasts three times with the props hard coded in
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## class 02 1/11/22
+- Number and name of feature: Feature #1: Display image
 
-## Available Scripts
+- Estimate of time needed to complete: 15 minutes
 
-In the project directory, you can run:
+- Start time: 6:00pm
 
-### `npm start`
+- Finish time: 6:20pm
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Actual time needed to complete: 20 minutes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Number and name of feature: Feature #2: Allow users to vote for their favorite beast
 
-### `npm test`
+- Estimate of time needed to complete: 30 minutes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Start time: 6:30pm
 
-### `npm run build`
+- Finish time: 6:50pm
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Actual time needed to complete: 20 minutes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Number and name of feature: Feature #3: Bootstrap
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Estimate of time needed to complete: 15 minutes
 
-### `npm run eject`
+- Start time: 7pm
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Finish time: 7:30pm
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Actual time needed to complete: 30 minutes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Number and name of feature: Stretch Goal: Add Interaction
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Estimate of time needed to complete: 20 minutes
 
-## Learn More
+- Start time: 8:00pm
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Finish time: 8:20pm
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Actual time needed to complete: 20 minutes
