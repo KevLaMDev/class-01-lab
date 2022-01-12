@@ -1,0 +1,13 @@
+article {
+  border: 1px solid black;
+  margin-top: 2vw;
+  max-height: 400px;
+  min-height: 400px;
+}
+
+article img {
+  width: 100%;
+  max-height: 270px;
+  min-height: 270px;
+}
+
