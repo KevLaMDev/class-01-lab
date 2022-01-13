@@ -1,3 +1,6 @@
+## Collaborators:
+
+
 ## class 01 1/10/22
 - added basic components: Main, Footer, Header, and HornedBeasts Component(this renders the individual pictures with their descriptions)
 - HornedBeasts component is built out with an img tag with src, alt, and title attributes and a p tag
@@ -44,3 +47,15 @@
 - Finish time: 8:20pm
 
 - Actual time needed to complete: 20 minutes
+
+## Class 03 1/12/22
+
+- Number and name of feature: Feature #1: Display a modal
+
+- Estimate of time needed to complete: 1 hour
+
+- Start time: 5:30pm
+
+- Finish time: 8:30pm
+
+- Actual time needed to complete: 2 hours (breaks excluded)

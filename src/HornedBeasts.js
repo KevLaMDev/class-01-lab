@@ -17,6 +17,8 @@ class HornedBeasts extends React.Component {
     })
   }
 
+ 
+
   clickOnDesc = () => {
     this.setState({
       instructions: 'psssst click on the picture'
@@ -32,12 +34,17 @@ class HornedBeasts extends React.Component {
               variant="top"
               src={this.props.imageUrl}
               alt={this.props.description}
-              onClick={this.handleClick}
+              onClick={() => this.props.handleShowModal(this.props.beast)}
             />
             <Card.Body onClick={this.clickOnDesc}>
-              <Card.Title>{this.props.title}  💖: {this.state.votes}</Card.Title>
+              <Card.Title>
+                {this.props.title}
+                💖: {this.state.votes}
+              </Card.Title>
               <Card.Text>
-                {this.props.description} <br></br> {this.state.instructions}
+                {this.props.description} 
+                <br></br> 
+                {this.state.instructions}
               </Card.Text>
             </Card.Body>
           </Card>
