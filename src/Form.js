@@ -1,28 +1,27 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
 import Data from './data301.json'
+import Container from 'react-bootstrap/Container'
+import Form from 'react-bootstrap/Form'
 
-
-class Form extends React.Component {
-
-  handleSubmit = (event) => {
-    event.preventDefault();
-    let searchVal = event.target.search.value;
-    let searchResult = Data.map(obj => {
-      if (searchVal === obj.keyword) return obj;
-    })
-    this.props.saveSearchResult(searchResult)
-  }
+class HornForm extends React.Component {
 
   render() {
-    return(
-      <form onSubmit={this.handleSubmit}>
-        <label for="search" name="search">Search for image by animal:</label>
-        <input type="text" name="search" id="search"/>
-        <Button variant="primary" type="submit">Search</Button> 
-      </form>
+    return (
+      <Container>
+        <Form>
+          <Form.Group controlId="selector">
+            <Form.Select onChange={(e) => this.props.handleSelect(e.target.value)}>
+              <option value="1">1 Horn</option> 
+              <option value="2">2 Horns</option> 
+              <option value="3">3 Horns</option> 
+              <option value="100">3+ Horns</option>
+            </Form.Select>
+          </Form.Group>
+        </Form>
+      </Container>
     )
   }
 }
 
-export default Form;
+export default HornForm;
