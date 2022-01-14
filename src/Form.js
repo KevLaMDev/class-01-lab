@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
-import Data from './data301.json'
 import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
 
@@ -16,6 +15,7 @@ class HornForm extends React.Component {
               <option value="2">2 Horns</option> 
               <option value="3">3 Horns</option> 
               <option value="100">3+ Horns</option>
+              <option value="0">Show all Beasts</option>
             </Form.Select>
           </Form.Group>
         </Form>

@@ -2,14 +2,12 @@ import React from 'react';
 import HornedBeasts from './HornedBeasts.js';
 import './Main.css'
 import HornForm from './Form'
-import Data from './data301.json'
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      allBeasts: Data,
-      beastsToShow: Data
+      beastsToShow: this.props.allBeasts
     }
   }
 
@@ -17,11 +15,11 @@ class Main extends React.Component {
     // parses input val, returns a new arr of objs with input val and updates state prop 'beastsToShow' which contains objs that will be rendered in beastsArray
   handleSelect = (numOfHorns) => {
     numOfHorns = parseInt(numOfHorns);
-    let newSelection = this.state.allBeasts.filter(obj => {
+    let newSelection = this.props.allBeasts.filter(obj => {
       if (obj.horns === numOfHorns) return obj
     });
-    console.log('newSelection', newSelection)
-
+    if (numOfHorns === 0) newSelection = this.props.allBeasts;
+    
     this.setState({
       beastsToShow: newSelection
     })

@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
-import Data from './data301.json';
+import data from './data301.json';
 import SelectedBeast from './SelectedBeast'
 import Form from './Form'
 
@@ -40,7 +40,7 @@ class App extends React.Component {
           currentBeast={this.state.currentBeast}
           show={this.state.show}
         />
-        <Main allBeasts={Data} handleShowModal={this.handleShowModal}/>
+        <Main allBeasts={data} handleShowModal={this.handleShowModal}/>
         <Footer />
       </>
     )

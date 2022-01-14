@@ -15,6 +15,7 @@ class HornedBeasts extends React.Component {
     this.setState({
       votes: this.state.votes + 1
     })
+    this.props.handleShowModal(this.props.beast)
   }
 
  
@@ -34,7 +35,7 @@ class HornedBeasts extends React.Component {
               variant="top"
               src={this.props.imageUrl}
               alt={this.props.description}
-              onClick={() => this.props.handleShowModal(this.props.beast)}
+              onClick={this.handleClick}
             />
             <Card.Body onClick={this.clickOnDesc}>
               <Card.Title>
