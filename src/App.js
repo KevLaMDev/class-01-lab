@@ -29,25 +29,18 @@ class App extends React.Component {
     })
   }
 
-  saveSearchResult = (searchResult) => {
-    this.setState({
-      searchResult: searchResult
-    })
-  }
-
   render() {
     console.log(this.state.currentBeast)
     return (
       <>
         <Header />
-        <Form saveSearchResult={this.saveSearchResult}/>
         <SelectedBeast 
           handleShowModal={this.handleShowModal}
           handleCloseModal={this.handleCloseModal}
           currentBeast={this.state.currentBeast}
           show={this.state.show}
         />
-        <Main data={Data} handleShowModal={this.handleShowModal}/>
+        <Main allBeasts={Data} handleShowModal={this.handleShowModal}/>
         <Footer />
       </>
     )
