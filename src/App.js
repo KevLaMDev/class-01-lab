@@ -4,7 +4,7 @@ import Main from './Main';
 import Footer from './Footer';
 import data from './data301.json';
 import SelectedBeast from './SelectedBeast'
-import Form from './Form'
+
 
 class App extends React.Component {
   constructor(props) {
