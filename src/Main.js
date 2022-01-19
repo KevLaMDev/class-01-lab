@@ -15,9 +15,7 @@ class Main extends React.Component {
     // parses input val, returns a new arr of objs with input val and updates state prop 'beastsToShow' which contains objs that will be rendered in beastsArray
   handleSelect = (numOfHorns) => {
     numOfHorns = parseInt(numOfHorns);
-    let newSelection = this.props.allBeasts.filter(obj => {
-      if (obj.horns === numOfHorns) return obj
-    });
+    let newSelection = this.props.allBeasts.filter(obj => obj.horns === numOfHorns);
     if (numOfHorns === 0) newSelection = this.props.allBeasts;
     
     this.setState({
